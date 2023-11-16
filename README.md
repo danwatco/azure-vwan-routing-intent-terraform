@@ -34,13 +34,13 @@ List of resources deployed
     - Authenticate using Azure CLI
 
     ```bash
-        az login
+    az login
     ```
 
     - Select subscription for deployment
 
     ```bash
-        az account set --subscription "<SUBSCRIPTION_ID>"
+    az account set --subscription "<SUBSCRIPTION_ID>"
     ```
 
 1. Initialse Terraform configuration
