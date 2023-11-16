@@ -43,7 +43,7 @@ List of resources deployed
     az account set --subscription "<SUBSCRIPTION_ID>"
     ```
 
-1. Initialse Terraform configuration
+1. Initialize Terraform configuration
 
     ```bash
     terraform init
@@ -71,11 +71,11 @@ List of resources deployed
     - Create a Terraform plan for removal of resources
 
     ```bash
-        terraform plan -destroy -out tfplan_destroy
+    terraform plan -destroy -out tfplan_destroy
     ```
 
     - Apply removal plan to clean up resources
 
     ```bash
-        terraform apply tfplan_destroy
+    terraform apply tfplan_destroy
     ```
