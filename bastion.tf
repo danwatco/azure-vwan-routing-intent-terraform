@@ -17,9 +17,6 @@ resource "azurerm_virtual_network" "bastion_vnet" {
     address_prefix = "10.50.0.0/24"
   }
 
-  lifecycle {
-    ignore_changes = [subnet]
-  }
 }
 
 resource "azurerm_virtual_hub_connection" "bastion_hub_connection" {

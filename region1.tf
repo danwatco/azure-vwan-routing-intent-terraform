@@ -32,9 +32,6 @@ resource "azurerm_virtual_network" "vnet1_region1" {
     security_group = azurerm_network_security_group.vnet1_nsg.id
   }
 
-  lifecycle {
-    ignore_changes = [subnet]
-  }
 }
 
 # NSG

@@ -43,9 +43,6 @@ resource "azurerm_network_security_group" "vnet1_region2_nsg" {
   location            = azurerm_resource_group.region2_rg.location
   resource_group_name = azurerm_resource_group.region2_rg.name
 
-  lifecycle {
-    ignore_changes = [security_rule]
-  }
 }
 
 resource "azurerm_virtual_hub_connection" "vnet1_region2_hub_connection" {
