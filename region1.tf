@@ -71,8 +71,8 @@ resource "azurerm_windows_virtual_machine" "vm1_region1" {
   location            = azurerm_resource_group.region1_rg.location
   size                = "Standard_D2s_v3"
 
-  admin_username = "azureuser"
-  admin_password = "Pa$$w0rd123!"
+  admin_username = var.vm_user
+  admin_password = var.vm_password
   network_interface_ids = [
     azurerm_network_interface.vm1_nic.id
   ]
